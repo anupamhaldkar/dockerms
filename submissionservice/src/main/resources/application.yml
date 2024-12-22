@@ -1,0 +1,24 @@
+server:
+  port: 8084
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:password@localhost:27017/submissionservice?authSource=admin
+      username: root
+      password: password
+      database: admin
+rabbitmq:
+  host: rabbitmq
+  port: 5672   
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  data:
+    mongodb:
+      uri: mongodb://root:password@localhost:27017/submissionservice?authSource=admin
+      username: root
+      password: password
+      database: admin

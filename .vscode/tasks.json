@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java (buildArtifact)",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:authservice}",
+				"${dependencies:authservice}",
+				"${compileOutput:codeexecutionservice}",
+				"${dependencies:codeexecutionservice}",
+				"${compileOutput:problemservice}",
+				"${dependencies:problemservice}",
+				"${compileOutput:submissionservice}",
+				"${dependencies:submissionservice}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): codeEditor",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

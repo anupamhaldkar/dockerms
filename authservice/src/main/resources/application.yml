@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/authservice
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: <your_jwk_set_uri>

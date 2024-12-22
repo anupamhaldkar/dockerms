@@ -1,0 +1,9 @@
+server:
+  port: 8083
+spring:
+  rabbitmq:
+    host: localhost  # Or use RabbitMQ service host if containerized
+    port: 5672
+  data:
+    mongodb:
+      uri: mongodb://root:password@mongo:27017/codeexecutionservice
